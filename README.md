@@ -224,10 +224,3 @@ environment.
 - Tschannen et al. SigLIP 2: Multilingual Vision-Language
   Encoders with Improved Semantic Understanding,
   Localization, and Dense Features. 2025.
-
-## Academic Context
-
-Computer Vision — Assignment 3
-
-University of North Carolina at Charlotte
-Fall 2026
