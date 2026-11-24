@@ -1,0 +1,16 @@
+{
+    "selected_experiment": "E14_Confidence_Adaptive_Fusion",
+    "training_images": 16,
+    "images_per_class": 1,
+    "number_of_classes": 16,
+    "test_images": 400,
+    "random_seed": 42,
+    "accuracy_percent": 92.5,
+    "macro_precision_percent": 94.04371028369884,
+    "macro_recall_percent": 92.5,
+    "macro_f1_percent": 92.15938779357897,
+    "correct_predictions": 370,
+    "incorrect_predictions": 30,
+    "total_experiments": 16,
+    "selection_reason": "Highest observed accuracy, tied with E16, without additional test-time augmentation."
+}

@@ -1,0 +1,159 @@
+{
+    "project": "One-Shot Scene Classification",
+    "dataset": {
+        "number_of_classes": 16,
+        "class_names": [
+            "Bedroom",
+            "Coast",
+            "Flower",
+            "Forest",
+            "Highway",
+            "Industrial",
+            "InsideCity",
+            "Kitchen",
+            "LivingRoom",
+            "Mountain",
+            "Office",
+            "OpenCountry",
+            "Store",
+            "Street",
+            "Suburb",
+            "TallBuilding"
+        ],
+        "class_mapping": {
+            "Bedroom": 0,
+            "Coast": 1,
+            "Flower": 2,
+            "Forest": 3,
+            "Highway": 4,
+            "Industrial": 5,
+            "InsideCity": 6,
+            "Kitchen": 7,
+            "LivingRoom": 8,
+            "Mountain": 9,
+            "Office": 10,
+            "OpenCountry": 11,
+            "Store": 12,
+            "Street": 13,
+            "Suburb": 14,
+            "TallBuilding": 15
+        },
+        "original_training_images": 2400,
+        "selected_training_images": 16,
+        "unused_training_images": 2384,
+        "training_images_per_class": 1,
+        "test_images": 400,
+        "test_images_per_class": 25,
+        "random_seed": 42
+    },
+    "foundation_models": {
+        "CLIP": {
+            "architecture": "ViT-L-14",
+            "pretrained_weights": "laion2b_s32b_b82k",
+            "input_resolution": [
+                224,
+                224
+            ],
+            "embedding_dimension": 768,
+            "total_parameters": 427616513,
+            "trainable_parameters": 0
+        },
+        "SigLIP2": {
+            "model_id": "google/siglip2-so400m-patch14-384",
+            "input_resolution": [
+                384,
+                384
+            ],
+            "embedding_dimension": 1152,
+            "total_parameters": 1136008498,
+            "trainable_parameters": 0
+        }
+    },
+    "methodology": {
+        "foundation_models_frozen": true,
+        "prompt_templates": [
+            "a photo of {}.",
+            "a photograph of {}.",
+            "a grayscale photograph of {}.",
+            "a black and white photo of {}.",
+            "an image showing {}.",
+            "a scene depicting {}.",
+            "a realistic photograph of {}.",
+            "a picture of {}."
+        ],
+        "class_descriptions": {
+            "Bedroom": "a bedroom with a bed and bedroom furniture",
+            "Coast": "a coastal landscape with sea and shoreline",
+            "Flower": "flowers and flowering plants",
+            "Forest": "a forest with many trees",
+            "Highway": "a highway or motorway with multiple lanes",
+            "Industrial": "an industrial area or factory facility",
+            "InsideCity": "an urban city scene with buildings",
+            "Kitchen": "a kitchen with cooking appliances and cabinets",
+            "LivingRoom": "a living room with sofas and furniture",
+            "Mountain": "a mountainous natural landscape",
+            "Office": "an office workspace with desks and computers",
+            "OpenCountry": "an open rural countryside landscape",
+            "Store": "the interior of a retail store or shop",
+            "Street": "a street scene with roads and buildings",
+            "Suburb": "a suburban residential neighborhood",
+            "TallBuilding": "tall buildings and skyscrapers"
+        },
+        "prompts_per_class": 8,
+        "total_prompts": 128,
+        "feature_normalization": "L2",
+        "similarity_metric": "Cosine similarity",
+        "support_views_per_image": 9,
+        "total_support_views": 144,
+        "confidence_adaptive_fusion": true,
+        "test_time_augmentation": true,
+        "total_experiments": 16,
+        "experiment_names": [
+            "E01_CLIP_ZeroShot",
+            "E02_CLIP_OneShot",
+            "E03_CLIP_Fusion",
+            "E04_CLIP_Augmented_OneShot",
+            "E05_CLIP_Augmented_Fusion",
+            "E06_SigLIP_ZeroShot",
+            "E07_SigLIP_OneShot",
+            "E08_SigLIP_Fusion",
+            "E09_SigLIP_Augmented_OneShot",
+            "E10_SigLIP_Augmented_Fusion",
+            "E11_Ensemble_ZeroShot",
+            "E12_Ensemble_OneShot",
+            "E13_Ensemble_Fusion",
+            "E14_Confidence_Adaptive_Fusion",
+            "E15_TTA_Fixed_Fusion",
+            "E16_TTA_Adaptive_Fusion"
+        ]
+    },
+    "evaluation": {
+        "best_observed_experiment": "E14_Confidence_Adaptive_Fusion",
+        "best_observed_accuracy_percent": 92.5,
+        "correct_predictions": 370,
+        "incorrect_predictions": 30
+    },
+    "environment": {
+        "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+        "python_version": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "pytorch_version": "2.14.1+cu130",
+        "cuda_available": true,
+        "cuda_version": "13.0",
+        "gpu": "Tesla T4",
+        "packages": {
+            "torch": "2.14.1+cu130",
+            "torchvision": "0.29.1+cu130",
+            "open-clip-torch": "4.2.2",
+            "transformers": "5.22.1",
+            "huggingface-hub": "1.33.0",
+            "numpy": "2.4.6",
+            "pandas": "2.2.3",
+            "scikit-learn": "1.6.1",
+            "matplotlib": "3.10.0",
+            "seaborn": "0.13.2",
+            "Pillow": "11.3.0",
+            "tqdm": "4.67.3"
+        }
+    },
+    "export_timestamp_utc": "2026-11-24T08:08:19.636257+00:00"
+}

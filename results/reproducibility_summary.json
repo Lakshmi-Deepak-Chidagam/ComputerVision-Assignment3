@@ -1,0 +1,35 @@
+{
+  "final_experiment": "E14_Confidence_Adaptive_Fusion",
+  "original_training_images": 16,
+  "test_images": 400,
+  "correct_predictions": 370,
+  "incorrect_predictions": 30,
+  "accuracy_percent": 92.5,
+  "matching_predictions": 400,
+  "mismatching_predictions": 0,
+  "prediction_agreement_percent": 100.0,
+  "independent_execution_seconds": 88.91772861499976,
+  "cached_embeddings_used": false,
+  "backup_files": [
+    {
+      "file": "inference.py",
+      "size_bytes": 9847,
+      "sha256": "5eb91291a17af94c15bbbb742e1f3dba3d8204f3e41ee2362b30a883437b1254"
+    },
+    {
+      "file": "results/model/e14_final_classifier.pt",
+      "size_bytes": 374266,
+      "sha256": "25ba81b3c0eb1b001e3940c695ea778bb0cf84ef8d1f13077c9443641f0dd07e"
+    },
+    {
+      "file": "results/independent_e14_predictions.csv",
+      "size_bytes": 19442,
+      "sha256": "fe9bd533506025ec31a8f02360213a4f5ac3d64b64829dfb4cc357fcb624b796"
+    },
+    {
+      "file": "results/e14_reproducibility_comparison.csv",
+      "size_bytes": 22998,
+      "sha256": "11ea386c5238cb065275ff360ca0b814762f89754470421fa88fcabf91c09c81"
+    }
+  ]
+}
