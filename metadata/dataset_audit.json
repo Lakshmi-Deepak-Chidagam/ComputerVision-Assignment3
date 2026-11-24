@@ -1,0 +1,111 @@
+{
+    "assignment": "Computer Vision Assignment 3",
+    "random_seed": 42,
+    "available_training_images": 2400,
+    "selected_training_images": 16,
+    "unused_training_images": 2384,
+    "number_of_classes": 16,
+    "training_images_per_class": 1,
+    "test_images": 400,
+    "training_test_file_duplicates": 0,
+    "training_test_pixel_duplicates": 0,
+    "selected_samples_verified": true,
+    "selected_samples": [
+        {
+            "class_name": "Bedroom",
+            "class_index": 0,
+            "selected_image": "Bedroom/image_0029.jpg",
+            "sha256": "c1c69b8bb9e1a40078252bacd4cf8215a00baa3291750a9f56544c49be4d3fce"
+        },
+        {
+            "class_name": "Coast",
+            "class_index": 1,
+            "selected_image": "Coast/image_0007.jpg",
+            "sha256": "bf50f28048ae3375d3d5022d123774ba2bf7f6015e334511b42c23b73a19dfb1"
+        },
+        {
+            "class_name": "Flower",
+            "class_index": 2,
+            "selected_image": "Flower/image_0121.jpg",
+            "sha256": "e23275edd2299fbd11fedacae057b281c17a2b176673559e865b77a343adf9bb"
+        },
+        {
+            "class_name": "Forest",
+            "class_index": 3,
+            "selected_image": "Forest/image_0063.jpg",
+            "sha256": "c0230c98818951c7b5fcc8cdb676608eed627811ea44e6e7efd434b0989856f7"
+        },
+        {
+            "class_name": "Highway",
+            "class_index": 4,
+            "selected_image": "Highway/image_0058.jpg",
+            "sha256": "a8333559723b62f1dff75a988915bb58f759d0ae7305666b5c2e72ee90d17b22"
+        },
+        {
+            "class_name": "Industrial",
+            "class_index": 5,
+            "selected_image": "Industrial/image_0036.jpg",
+            "sha256": "3d6d5f70ce5ad3ef0b73a6886230c58b6cddabd93edea3861bbd58ba5f0e5a7b"
+        },
+        {
+            "class_name": "InsideCity",
+            "class_index": 6,
+            "selected_image": "InsideCity/image_0027.jpg",
+            "sha256": "ca223af2a6e1094b1ef7b6664a82090c469cd4ac7d09b6a4c2b6e7ab4d752b63"
+        },
+        {
+            "class_name": "Kitchen",
+            "class_index": 7,
+            "selected_image": "Kitchen/image_0188.jpg",
+            "sha256": "4e698e53b8a46c357a77f02397b7b585d79c0884ebc7fb885eb4f1e1d1536c17"
+        },
+        {
+            "class_name": "LivingRoom",
+            "class_index": 8,
+            "selected_image": "LivingRoom/image_0023.jpg",
+            "sha256": "90595a3969e2ff6bf0d2c494d9f5b6c0cbb4bbb974ccb8d1bef8908eedeee19c"
+        },
+        {
+            "class_name": "Mountain",
+            "class_index": 9,
+            "selected_image": "Mountain/image_0238.jpg",
+            "sha256": "0ea48ad7eed8e537e19b19b7d1c99e192e04555eaed7d0db2fb147c64e50cf85"
+        },
+        {
+            "class_name": "Office",
+            "class_index": 10,
+            "selected_image": "Office/image_0009.jpg",
+            "sha256": "99a057d4deb6b0dcc157b427918be0df2da44279ae8bab01466b4f3712743c51"
+        },
+        {
+            "class_name": "OpenCountry",
+            "class_index": 11,
+            "selected_image": "OpenCountry/image_0008.jpg",
+            "sha256": "b4fa3fa343fb638f09714f1dd3fc54b1329a1e97f82da34c3b6cefc75c2f90d2"
+        },
+        {
+            "class_name": "Store",
+            "class_index": 12,
+            "selected_image": "Store/image_0024.jpg",
+            "sha256": "b68a963412f560291bb113022d5a78f7173368a97d9b9359be93647585bc592b"
+        },
+        {
+            "class_name": "Street",
+            "class_index": 13,
+            "selected_image": "Street/image_0056.jpg",
+            "sha256": "f03ad67bd10e52214ec14d2392eb98a34e36a4f584adb5eafffdbb39222d93cd"
+        },
+        {
+            "class_name": "Suburb",
+            "class_index": 14,
+            "selected_image": "Suburb/image_0060.jpg",
+            "sha256": "2332dda73f835448f6d6eab0e97aec4ccc91176e6c4f07ca9ff0afe81c0b48bc"
+        },
+        {
+            "class_name": "TallBuilding",
+            "class_index": 15,
+            "selected_image": "TallBuilding/image_0294.jpg",
+            "sha256": "92fecd60e0be6b9546de4061fb2f44c408236cc18dd90952db453a25dff792aa"
+        }
+    ]
+}
